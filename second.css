@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font: italic ,normal;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to right,#ff9966,#ff5e62);
+}
+.container{
+    visibility: hidden;
+    position: absolute;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    padding:15px 10px ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.container .menu{
+    list-style-type: none;
+    padding: 0 10px;
+}
+.menu .item{
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.menu .item:hover{
+    background: #f2f2f2;
+}
+.menu .item i{
+    padding-right: 10px;
+}
+.menu .setting{
+    border-top: 1px dashed #ccc;
+    margin: 10px 0;
+    padding-top: 10px ;
+}
+
+.menu .share{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+} 
+.menu .share .share-menu{
+    position: absolute;
+    left: 260px;
+    width: 170px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    visibility: hidden;
+    list-style-type: none;
+
+}
+
+.menu .share:hover .share-menu{
+    visibility: visible;
+
+}
+
